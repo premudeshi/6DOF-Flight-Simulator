@@ -87,6 +87,26 @@ myservo5.write(90);
 delay(1000);
 off();
 }
+ 
+ else{
+  if (voice == "heave"){
+on();
+myservo1.write(90);
+myservo2.write(90);
+myservo3.write(90);
+myservo4.write(90);
+myservo5.write(90); 
+delay(1000);
+myservo1.write(180);
+myservo2.write(0);
+myservo3.write(180);
+myservo4.write(0);
+myservo5.write(180); 
+delay(1000);
+off();   
+  }
+   
+ }
   
 }  
       
@@ -95,7 +115,7 @@ off();
 }
 }
 }
-voice="";
+
 }
 
 void off() {
@@ -104,6 +124,7 @@ myservo4.detach();
 myservo3.detach();
 myservo2.detach();
 myservo1.detach();
+voice="";
 }
 
 void on() {
