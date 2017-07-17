@@ -64,10 +64,38 @@ myservo5.write(180);
 delay(1000);
 off();
     }
+    
+    else{
+      if (voice == "upitch"){
+on();
+myservo1.write(180);
+myservo2.write(90);
+myservo3.write(0);
+myservo4.write(180);
+myservo5.write(90); 
+delay(1000);
+off();
+      }
+else {
+if (voice == "dpitch"){
+  on();
+myservo1.write(0);
+myservo2.write(90);
+myservo3.write(180);
+myservo4.write(0);
+myservo5.write(90); 
+delay(1000);
+off();
+}
+  
+}  
+      
+    }
+
+}
+}
+}
 voice="";
-}
-}
-}
 }
 
 void off() {
